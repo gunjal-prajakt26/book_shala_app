@@ -1,0 +1,11 @@
+.checkout-address-list {
+    font-size: 12px;
+    line-height: 5px;
+    margin: 10px 30px;
+    text-align: left;
+    display: flex;
+}
+
+.checkout-address-list input {
+    margin-right: 10px;
+}

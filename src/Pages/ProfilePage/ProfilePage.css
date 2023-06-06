@@ -1,0 +1,60 @@
+.profile-conatiner {
+    
+}
+.info-container{
+    margin: 10px auto;
+    width: 400px;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    align-self: flex-start;
+}
+
+.name {
+    border-bottom: 1px solid;
+    line-height: 5px;
+}
+
+.address-container {
+    list-style: none;
+}
+
+.address-title {
+    font-weight: 500;
+}
+
+.address-list {
+    font-size: 12px;
+    line-height: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.profile-btns {
+    margin: auto 10px auto auto;
+    padding: 5px 15px;
+    background-color: #0369a1;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.address-component {
+    position: absolute;
+    top: 165px;
+    right: 20px;
+}
+
+.logout-btn {
+    margin-top: 10px;
+    padding: 5px 15px;
+    background-color: #0369a1;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+}

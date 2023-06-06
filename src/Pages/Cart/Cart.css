@@ -1,0 +1,19 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px auto auto ;
+    align-self: flex-start;
+}
+
+.cart {
+    align-content: flex-start;
+    display: flex;
+}
+
+.coupon-model {
+    margin: 30px auto auto 50px;
+    position: sticky;
+  top: 100px;
+
+    /* overflow-x: hidden; */
+}

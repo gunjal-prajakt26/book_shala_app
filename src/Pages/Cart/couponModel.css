@@ -1,0 +1,95 @@
+.coupon-card {
+    width: 300px;
+    height: 450px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    /* margin: 10px auto; */
+}
+.checkout-card {
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 10px auto;
+    padding: 10px 0px;
+}
+
+.coupon-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:10px 30px;
+    font-weight: 500;
+    border-bottom: 0.2px solid;
+    font-size: 15px;
+}
+
+
+.coupon-btn button {
+    border: 1px solid;
+    border-radius: 5px;
+    font-weight: 550;
+    margin: auto 0px;
+    padding: 5px 15px;
+    background-color: #0369a1;
+    color: white;
+}
+
+.coupon-title {
+    margin: -10px 30px ;
+    border-bottom: 0.2px solid;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.price-details, .total-amount {
+    list-style: none;
+    line-height: 3px;
+    font-weight: 475;
+    font-size: 15px;
+    border-bottom: 0.2px solid;
+    margin: 15px 30px;
+    padding-bottom: 10px;
+}
+
+.coupon-card li, .checkout-card li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.checkout-items {
+    list-style: none;
+    line-height: 3px;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 5px 30px;
+}
+
+.checkout-items p {
+    font-weight: bold;
+}
+
+.total-amount {
+    font-weight: bold;
+}
+
+.total-discount {
+    color: rgb(29, 219, 35);
+    font-weight: 500;
+    font-size: 15px;
+    margin: 15px 30px;
+}
+
+.checkout-btn {
+    margin: auto 30px;
+}
+
+.checkout-btn button {
+    width: 100%;
+    padding: 5px;
+    font-weight: bold;
+    background-color: #0369a1;
+    color: white;
+}

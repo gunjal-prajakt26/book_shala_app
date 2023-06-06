@@ -1,0 +1,44 @@
+.app-header{
+    margin-top: 0px;
+    background-color: #0369a1;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 20px ;
+}
+
+.app-title{
+    margin: auto -100px;
+}
+.app-searchbar{
+    margin: auto 10px;
+}
+
+#searchBar{
+    width: 100%;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+.app-features{
+    display: flex;
+    justify-content: space-between;
+    margin: auto -200px auto 10px;
+}
+
+.app-features p{
+    align-self: flex-end;
+    margin: auto 0px auto 40px;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+}
+.notification-icon {
+    font-size: 0.2rem;
+    padding: 0.4rem;
+    height: 1.2rem;
+    top: -5px;
+}
