@@ -2,7 +2,6 @@ import { createContext, useContext, useState } from "react";
 import axios from "axios";
 import { DataContext } from "./DataContext";
 import { toast } from "react-toastify";
-import { v4 as uuid } from "uuid";
 
 
 export const  AuthContext= createContext();
@@ -16,7 +15,7 @@ export function AuthProvider({children}){
   const [user, setUser] = useState(localStorageUser?.user);
   const {setItems} = useContext(DataContext);
 
-  const loginUser=async (creds, address)=>{
+  const loginUser=async (creds)=>{
     try {
       const {
         data: { foundUser, encodedToken },status
@@ -29,7 +28,7 @@ export function AuthProvider({children}){
         setToken(encodedToken);
         localStorage.setItem("user", JSON.stringify({ user: foundUser }));
         setUser(foundUser);
-        setItems({type: "ADD_ADDRESS", payLoad:{address:{_id:uuid(),...address}}});
+        // setItems({type: "INITIAL_ADDRESS", payLoad:foundUser.address});
         toast.success("LogIn Successfully");
       }
         } catch (error) {
@@ -38,7 +37,7 @@ export function AuthProvider({children}){
     }
 
 
-    const signupUser=async (creds)=>{
+    const signupUser=async (creds, address)=>{
         try {
       const {
         data: { createdUser, encodedToken },
@@ -49,7 +48,7 @@ export function AuthProvider({children}){
         setToken(encodedToken);
         localStorage.setItem("user", JSON.stringify({ user: createdUser }));
         setUser(createdUser);
-        setItems({type: "INITIAL_ADDRESS", payLoad:createdUser.address});
+        // setItems({type: "INITIAL_ADDRESS", payLoad:createdUser.address});
         toast.success("SignUp Successfully");
       }
     } catch (error) {

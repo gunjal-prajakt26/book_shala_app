@@ -3,6 +3,8 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthContext";
 import { DataContext } from "../../Context/DataContext";
 import "./LogIn.css";
+import { v4 as uuid } from "uuid";
+
 
 export function Login() {
   const navigate = useNavigate();
@@ -12,10 +14,10 @@ export function Login() {
   const [form, setForm]= useState({email:"", password:""})
 
   const loginHandler=()=>{
-    loginUser(form,{});
+    loginUser(form);
   }
 
-  const dummyAddress={name: "Admin",
+  const dummyAddress={_id:uuid(),name: "Admin",
   street: "33 , MG Road",
   city: "Pune",
   state: "Maharashtra",
@@ -25,7 +27,7 @@ export function Login() {
 }
   const testLoginHandler=()=>{
     loginUser({email: "adarshbalika@gmail.com",
-    password: "adarshbalika"}, dummyAddress);
+    password: "adarshbalika"});
    
   }
 

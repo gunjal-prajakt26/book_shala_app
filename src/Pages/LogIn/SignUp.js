@@ -13,6 +13,7 @@ export function Signup() {
 
   const signupHandler=()=>{
     const { email, password, firstName, lastName } = form;
+    const address={};
     if (email && password && firstName && lastName !== ""){
     signupUser(form);
     }
