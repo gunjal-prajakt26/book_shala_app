@@ -10,7 +10,7 @@ export function AppFooter() {
           </p>
           <p>Privacy Policy</p>
           <p>Terms of Use</p>
-          <p>© 2022 Pustaka</p>
+          <p>© 2022 Book-Shala</p>
           </div>
           <div className="footer-links">
           <div>
